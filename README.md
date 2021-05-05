@@ -21,5 +21,5 @@ App converts the given integer to binary system and returns it as a string.
 App converts the given integer to binary system, swithces the digits (0 to 1 and 1 to 0) and returns it in octal system as a string.
 3. localhost:8080/api/task3/{int}
 App converts the given integer to binary system, reverses the digits (e.g. 100 to 001) and returns it in hexadecimal system as a string.
-4. localhost:8080/api/task4/{int}
+4. localhost:8080/api/task4/{int}\n
 App converts the given integer to binary system, moves all 1s to the left and all 0s to the right and returns it in decimal system as a string.

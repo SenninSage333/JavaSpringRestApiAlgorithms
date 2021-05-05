@@ -19,3 +19,5 @@ REST api in Java Spring.
 3. localhost:8080/api/task3/{int} - App converts the given integer to binary system, reverses the digits (e.g. 100 to 001) and returns it in hexadecimal system as a string.
 4. localhost:8080/api/task4/{int} - App converts the given integer to binary system, moves all 1s to the left and all 0s to the right and returns it in decimal system as a string.
 5. localhost:8080/api/getall - App returns list of all tasks saved to database.
+6. localhost:8080/v2/api-docs - Returns data from swagger.
+7. localhost:8080/swagger-ui.html - Returns data from swagger in html.

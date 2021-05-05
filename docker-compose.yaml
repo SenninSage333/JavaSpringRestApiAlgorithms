@@ -5,6 +5,6 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: senninsage333/sap:latest
+    image: sap
     ports:
       - 8080:8080

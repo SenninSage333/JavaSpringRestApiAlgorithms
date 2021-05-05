@@ -1,0 +1,10 @@
+version: '2'
+services:
+  SAP:
+    container_name: SAP
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: senninsage333/sap:latest
+    ports:
+      - 8080:8080

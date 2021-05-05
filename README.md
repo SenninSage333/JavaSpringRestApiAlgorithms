@@ -14,7 +14,7 @@ REST api in Java Spring.
 2. Execute command 'docker compose up'
 
 ## List of all endpoints in app
-# API returns JSON in given format: { "result": "" }
+### API returns JSON in given format: { "result": "" }
 1. localhost:8080/api/task1/{int}
 App converts the given integer to binary system and returns it as a string.
 2. localhost:8080/api/task2/{int}

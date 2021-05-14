@@ -1,6 +1,14 @@
-package io.github.SenninSage333.SAP;
+package io.github.SenninSage333.SAP.implementations;
 
-public class Algorithms {
+import io.github.SenninSage333.SAP.model.AlgorithmsInterface;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Algorithms implements AlgorithmsInterface {
+
+    public Algorithms() {
+    }
+
     public String toBinaryFromDecimal(int N) {
         return Integer.toBinaryString(N);
     }
@@ -27,16 +35,15 @@ public class Algorithms {
 
     public String MoveDigitsAndReturnDecimal(int N) {
         String temp = Integer.toBinaryString(N);
-        String ones = "";
-        String zeros = "";
+        StringBuilder strBld = new StringBuilder();
         for (int i = 0; i < temp.length(); i++) {
             if (temp.charAt(i) == '0') {
-                zeros += "0";
+                strBld.append("0");
             } else {
-                ones += "1";
+                strBld.insert(0, "1");
             }
         }
-        String result = String.valueOf(Integer.parseInt(ones + zeros, 2));
+        String result = String.valueOf(Integer.parseInt(strBld.toString(), 2));
         return result;
     }
 }
